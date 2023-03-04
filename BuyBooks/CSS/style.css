@@ -1,0 +1,215 @@
+/*
+Author: Sayantika Kandar;
+Theme: Website to buy books;
+Version: 1.0;
+*/
+
+
+/* CSS for All */
+*{
+	margin: 0 0;
+	padding: 0 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+	padding: 1%;
+	background-color: #cce6ff;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.book-detail{
+	font-size: 14px;
+}
+.book-price{
+	font-size: 20px;
+}
+.img-responsive{
+	width: 100%;
+}
+.img-curve{
+	border-radius: 15px;
+}
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-white{
+	color: white;
+}
+.clearfix{
+	clear: both;
+	float: none;
+}
+.search{
+	width: 400px;
+	height: 40px;
+}
+.input-responsive{
+	width: 800px;
+	height: 40px;
+	padding: 1%;
+	margin-bottom: 2%;
+}
+.btn{
+	padding: 1%;
+	border: none;
+	font-size: 1rem;
+	border-radius: 5px;
+}
+.btn-primary{
+	background-color: #d966ff;
+	color: white;
+	cursor: pointer;
+}
+.btn-primary:hover{
+	color: white;
+	background-color: #002e4d;
+}
+h2{
+	color: #600080;
+	font-size: 2rem;
+	margin-bottom: 2%;
+}
+h3{
+	font-size: 1.5rem;
+}
+.float-container{
+	position: relative;
+}
+.float-text{
+	position: absolute;
+	bottom: 50px;
+	left: 40%;
+}
+fieldset{
+	border: 1px solid white;
+	margin: 5%;
+	padding: 3%;
+	border-radius: 5px;
+	background-color: #e6f2ff;
+}
+.error{
+	padding: 2%;
+	color: red;
+}
+.success{
+	padding: 2%;
+	color: green;
+}
+.grid-container {
+  display: grid;
+  gap: 50px 100px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* CSS for navbar section */
+.menu{
+	line-height: 60px;
+}
+
+/* menu */
+.navbar .container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #600080;
+}
+
+.navbar .container li {
+  float: left;
+}
+
+.navbar .container li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar .container li a:hover:not(.active) {
+  background-color: #d966ff;
+}
+
+.active {
+  background-color: #002e4d;
+}
+
+/* Book Menu */
+.book-search .book-menu-img img{
+	float: left;
+	margin-right: 20px;
+}
+.input-quantity{
+	width: 50px;
+	height: 40px;
+}
+
+/* Footer */
+.social .container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #600080;
+}
+.social .container li {
+	display: inline-block;
+}
+.social .container li img {
+	padding: 10px;
+	width: 25px;
+	height: 25px;
+}
+.categories .container{
+	background-color: #002e4d;
+}
+.book-menu-box{
+	padding: 50px;
+}
+.book-menu-box .book-menu-img img{
+	float: left;
+	margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

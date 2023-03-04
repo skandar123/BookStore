@@ -1,0 +1,165 @@
+/*
+Author: Sayantika Kandar;
+Theme: Website to buy books;
+Version: 1.0;
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+	padding: 1%;
+	width: 80%;
+	margin: 0 auto;
+}
+.text-center{
+	text-align: center;
+}
+/* menu */
+.navbar .container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #600080;
+}
+.navbar .container li {
+  float: left;
+}
+.navbar .container li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar .container li a:hover:not(.active) {
+  background-color: #d966ff;
+}
+
+/* CSS for Main Content */
+.main-content{
+	background-color: #f1f2f6;
+	padding: 3% 0;
+}
+.col-4{
+	width: 18%;
+	background-color: white;
+	margin: 1%;
+	padding: 2%;
+	float: left;
+}
+.clearfix{
+	float: none;
+	clear: both;
+}
+.success{
+	color: #2ed573;
+}
+.error{
+	color: #ff4757;
+}
+
+/* CSS for Footer */
+.footer{
+	background-color: #600080;
+	color: white;
+}
+
+/* CSS for Login */
+.form{
+	border: 1px solid #d966ff;
+	width: 20%;
+	margin: 10% auto;
+	padding: 2%;
+	border-radius: 8px;
+	background-color: #600080;
+}
+.link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.link a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+/* New CSS */
+a{
+    text-decoration: none;
+    color: black;
+}
+.input-responsive{
+	width: 150px;
+	height: 40px;
+	padding: 1%;
+	margin-bottom: 2%;
+}
+.white-text{
+	color: white;
+}
+h1{
+	color: #600080;
+	font-size: 2rem;
+	margin-bottom: 2%;
+}
+.btn-new {
+	background-color: #d966ff;
+	color: white;
+	text-align: center;
+	border-radius: 8px;
+	font-size: 16px;
+	padding: 1%;
+	font-weight: bold;
+}
+.btn-new:hover {
+	background-color: #002e4d;
+}
+.special {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+th{
+	background-color: #002e4d;
+	color: white;
+}
+tr:nth-child(even) {
+	background-color: #ccebff;
+}
+tr:nth-child(odd) {
+	background-color: white;
+}
+input[type=text], input[type=password], input[type=number], input[type=file], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #d966ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #002e4d;
+}
