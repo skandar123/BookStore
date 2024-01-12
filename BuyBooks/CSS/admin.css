@@ -8,6 +8,16 @@ Version: 1.0;
 	margin: 0;
 	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
+} 
+.frontend{
+	background-image: url("../images/other/red_books.jpeg");
+	background-size: cover;
+	overflow: scroll;
+}
+.backend{
+	 background-image: url("../images/other/book.jpeg");
+	 background-size: cover;
+	 overflow: scroll;
 }
 .wrapper{
 	padding: 1%;
@@ -23,7 +33,7 @@ Version: 1.0;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #600080;
+  background-color: #5d8151;
 }
 .navbar .container li {
   float: left;
@@ -36,7 +46,7 @@ Version: 1.0;
   text-decoration: none;
 }
 .navbar .container li a:hover:not(.active) {
-  background-color: #d966ff;
+  background-color: #81cf71;
 }
 
 /* CSS for Main Content */
@@ -56,7 +66,7 @@ Version: 1.0;
 	clear: both;
 }
 .success{
-	color: #2ed573;
+	color: #135d32;
 }
 .error{
 	color: #ff4757;
@@ -64,18 +74,18 @@ Version: 1.0;
 
 /* CSS for Footer */
 .footer{
-	background-color: #600080;
+	background-color: #5d8151;
 	color: white;
 }
 
 /* CSS for Login */
 .form{
-	border: 1px solid #d966ff;
+	border: 1px solid #5d8151;
 	width: 20%;
 	margin: 10% auto;
 	padding: 2%;
 	border-radius: 8px;
-	background-color: #600080;
+	background-color: #5d8151;
 }
 .link{
     text-align: center;
@@ -102,12 +112,12 @@ a{
 	color: white;
 }
 h1{
-	color: #600080;
+	color: #ac9017;
 	font-size: 2rem;
 	margin-bottom: 2%;
 }
 .btn-new {
-	background-color: #d966ff;
+	background-color: #ac9017;
 	color: white;
 	text-align: center;
 	border-radius: 8px;
@@ -116,7 +126,7 @@ h1{
 	font-weight: bold;
 }
 .btn-new:hover {
-	background-color: #002e4d;
+	background-color: #ffc51f;
 }
 .special {
   border-radius: 5px;
@@ -132,11 +142,11 @@ th, td {
   padding: 8px;
 }
 th{
-	background-color: #002e4d;
+	background-color: #ac9017;
 	color: white;
 }
 tr:nth-child(even) {
-	background-color: #ccebff;
+	background-color: #f0f0f0;
 }
 tr:nth-child(odd) {
 	background-color: white;
@@ -152,7 +162,7 @@ input[type=text], input[type=password], input[type=number], input[type=file], se
 }
 input[type=submit] {
   width: 100%;
-  background-color: #d966ff;
+  background-color: #ac9017;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -161,5 +171,5 @@ input[type=submit] {
   cursor: pointer;
 }
 input[type=submit]:hover {
-  background-color: #002e4d;
+  background-color: #ffc51f;
 }
