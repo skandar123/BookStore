@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<title>Website for buying books - Login</title>
-		<link rel="stylesheet" href="../css/admin.css"></head>
+		<link rel="stylesheet" href="../CSS/admin.css"></head>
 	
-	<body>
+	<body class="backend">
 		<div class="form">
 			<h1 class="text-center white-text">Login</h1>
 			
