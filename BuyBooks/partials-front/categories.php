@@ -2,11 +2,12 @@
 
 <!-- Start of categories Section -->
 <section class="book-categories">
-	<div class="container">
+	<div class="container gradient-yellow-container">
 	
-		<h2 class="text-center">Explore Books</h2>
+		<h2 class="text-center">Explore Books by Exam</h2>
 		<p class="text-center">Click on the different competitive exams below and get the complete list of available books.</p>
-		<br>
+		</div>
+		<div class="img-container2">
 		<div class="grid-container">
 		<?php 
 		//Display all the categories that are active
@@ -29,9 +30,9 @@
 		        $title=$row['title'];
 		        $image_name=$row['image_name'];
 		        ?>
-		        
-		        <a href="category-books.php?category_id=<?php echo $id; ?>">
-        		<div class="grid-item">
+		        <div class="category-item">
+		       
+        		
         			<?php 
         			     if($image_name=="")
         			     {
@@ -42,15 +43,17 @@
         			     {
         			         //Image is available
         			         ?>
+        			         <a class="category-text" href="category-books.php?category_id=<?php echo $id; ?>">
         			         <img src="<?php echo SITEURL; ?>images/category/<?php echo $image_name; ?>" width="80" height="40">
+        			         </a>
         			         <?php 
         			     }
         			?>
         			
         			<!--  <h3 class="float-text text-white"><?php echo $title; ?></h3>-->
-        		</div>
-        		</a>
-		        
+        		
+        		
+		        </div>
 		        <?php 
 		    }
 		}
