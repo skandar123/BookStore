@@ -5,8 +5,9 @@
 <html>
 	<head>
 		<title>Website for buying books - Home Page</title>
-		<link rel="stylesheet" href="../css/admin.css">
+		<link rel="stylesheet" href="../CSS/admin.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+	    <link rel="icon" type="image/x-icon" href="../images/bookstore_logo.png">
 	</head>
 	<body>
 	<?php $activePage = basename($_SERVER['PHP_SELF'], ".php"); ?>
@@ -24,7 +25,7 @@
 				<li><a class="<?= ($activePage == 'manage-category') ? 'active':''; ?>" href="manage-category.php">Category</a></li>
 				<li><a class="<?= ($activePage == 'manage-book') ? 'active':''; ?>" href="manage-book.php">Book</a></li>
 				<li><a class="<?= ($activePage == 'manage-order') ? 'active':''; ?>" href="manage-order.php">Order</a></li>
-				<li><a class="<?= ($activePage == 'logout') ? 'active':''; ?>" href="logout.php">Logout</a></li>
+				<li style="float:right"><a class="<?= ($activePage == 'logout') ? 'active':''; ?>" href="logout.php">Logout</a></li>
 				</ul>
 			</div>
 		</section>
