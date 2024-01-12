@@ -15,12 +15,96 @@ Version: 1.0;
 	width: 80%;
 	margin: 0 auto;
 	padding: 1%;
-	background-color: #cce6ff;
+	background-color: #f0f0f0;
 }
+.img-container{
+	width: 80%;
+	margin: 0 auto;
+	padding: 1%;
+	background-image: url("../images/other/open_book.jpeg");
+}
+.img-container2{
+	width: 80%;
+	margin: 0 auto;
+	padding: 1%;
+	background-image: url("../images/other/books_bg.jpg");
+	background-size: cover;
+	overflow: scroll;
+}
+.medium-container{
+	width: 60%;
+	margin: 0 auto;
+	padding: 1%;
+	background-color: #f0f0f0;
+}
+.white-container{
+	background-color: white;
+}
+/*.lightgreen-container{
+	background-color: #a2e18f;
+}*/
+.gradient-green-container{
+	/* background-color: #a2e18f; */
+	background-image: linear-gradient(to bottom right, rgb(110, 152, 73, 1), rgb(110, 152, 73, 0), rgb(110, 152, 73, 1));
+}
+
+.colored-container{
+	background-color: #997c17;
+}
+.gradient-yellow-container{
+	/* background-color: #ffefa5; */
+	background-image: linear-gradient(to bottom right, rgb(255, 200, 0, 1), rgb(255, 200, 0, 0), rgb(255, 200, 0, 1));
+}
+.mini-container{
+	width: 40%;
+	margin: 0 auto;
+	padding: 1%;
+	background-color: #f0f0f0;
+}
+.imp-categories {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1%;
+	background-image: url("../images/other/stack_of_books.jpeg");
+	background-size: cover;
+	overflow: scroll;  
+}
+
 a{
 	text-decoration: none;
 	color: black;
 }
+.category-text{
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 1.5rem;
+	color: #997c17;
+}
+.category-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.category-item:hover{
+	background-color: #ffc51f;
+}
+.grid-container {
+  display: grid;
+  gap: 50px 100px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
 .book-detail{
 	font-size: 14px;
 }
@@ -66,21 +150,26 @@ a{
 	border-radius: 5px;
 }
 .btn-primary{
-	background-color: #d966ff;
+	background-color: #c5a11c;
 	color: white;
 	cursor: pointer;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .btn-primary:hover{
 	color: white;
-	background-color: #002e4d;
+	background-color: #ffc51f;
 }
 h2{
-	color: #600080;
+	color: #5d8151;
 	font-size: 2rem;
 	margin-bottom: 2%;
 }
+.yellow{
+	color: #ffc51f;
+}
 h3{
 	font-size: 1.5rem;
+	margin-bottom: 2%;
 }
 .float-container{
 	position: relative;
@@ -95,7 +184,7 @@ fieldset{
 	margin: 5%;
 	padding: 3%;
 	border-radius: 5px;
-	background-color: #e6f2ff;
+	background-color: #abc59d;
 }
 .error{
 	padding: 2%;
@@ -105,19 +194,7 @@ fieldset{
 	padding: 2%;
 	color: green;
 }
-.grid-container {
-  display: grid;
-  gap: 50px 100px;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-}
 
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  font-size: 20px;
-  text-align: center;
-}
 
 /* CSS for navbar section */
 .menu{
@@ -130,7 +207,7 @@ fieldset{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #600080;
+  background-color: #5d8151;
 }
 
 .navbar .container li {
@@ -146,14 +223,179 @@ fieldset{
 }
 
 .navbar .container li a:hover:not(.active) {
-  background-color: #d966ff;
+  background-color: #81cf71;
 }
 
-.active {
-  background-color: #002e4d;
+.navbar .active {
+  background-color: #c5a11c;
 }
 
-/* Book Menu */
+/* Category Dropdown */
+.container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5d8151;
+}
+
+.container li {
+  float: left;
+}
+
+.container li a, .container .dropbtn {
+  display: inline-block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.container li a:hover, .container .dropdown:hover .dropbtn {
+  background-color: #4e6f39;
+}
+
+.container li.dropdown {
+  display: inline-block;
+}
+
+.container .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f3cb6a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.container .dropdown-content a {
+  color: #5d8151;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.container .dropdown-content a:hover {background-color: #f1f1f1;}
+
+.container .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Search */
+input[name=search] {
+  width: 230px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+input[name=search]:focus {
+	  width: 800px;
+}
+
+/* About */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Slideshow Gallery */
+.slideshow-container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+
+
+/* Book List */
 .book-search .book-menu-img img{
 	float: left;
 	margin-right: 20px;
@@ -163,25 +405,111 @@ fieldset{
 	height: 40px;
 }
 
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #abc59d;
+  color: white;
+  border: 1px solid #abc59d;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.contact-detail .grid-container {
+  display: grid;
+  gap: 10px 10px;
+  grid-template-columns: auto auto;
+}
+
+.contact-detail .grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Contact Details */
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+.google-map {
+     padding-bottom: 50%;
+     position: relative;
+}
+
+.google-map iframe {
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     position: absolute;
+}
+
+/* Contact Form */
+.contact-container {
+  border-radius: 5px;
+  background-color: #abc59d;
+  padding: 50px;
+}
+
+.contact-container input[type=text], .contact-container select, .contact-container textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.contact-container input[type=submit] {
+  background-color: #c5a11c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-container input[type=submit]:hover {
+  background-color: #ffc51f;
+}
+
+
 /* Footer */
-.social .container ul {
+.social-media{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+.container .social-media ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #600080;
+  background-color: #5d8151;
 }
-.social .container li {
+.container .social-media li {
 	display: inline-block;
 }
-.social .container li img {
-	padding: 10px;
+.container .social-media li img {
 	width: 25px;
 	height: 25px;
 }
-.categories .container{
-	background-color: #002e4d;
-}
+
 .book-menu-box{
 	padding: 50px;
 }
@@ -191,25 +519,64 @@ fieldset{
 }
 
 
+/* Reviews */
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
+/* Caption text */
+.text {
+  color: #c93030;
+  background-color: white;
+  font-size: 25px;
+  /* padding: 8px 12px; */
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
 
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
+.active, .dot:hover {
+  background-color: #717171;
+}
 
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
