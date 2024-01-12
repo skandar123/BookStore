@@ -8,7 +8,7 @@ if(isset($_GET['category_id']))
     $category_id=$_GET['category_id'];
     
     //Get the category title based on category id
-    $sql="SELECT title FROM category WHERE id=$category_id";
+    $sql="SELECT title,image_name FROM category WHERE id=$category_id";
     
     //Execute the query
     $res=mysqli_query($conn, $sql);
@@ -18,6 +18,7 @@ if(isset($_GET['category_id']))
     
     //Get the title
     $category_title=$row['title'];
+    $category_image=$row['image_name'];
 } 
 else 
 {
@@ -30,7 +31,8 @@ else
 <!-- Start of Book Search Section -->
 <section class="book-search text-center">
 	<div class="container">
-		<h2>Books on <?php echo $category_title; ?> exam</h2>
+	    <img src="<?php echo SITEURL; ?>images/category/<?php echo $category_image; ?>" width="80" height="40"><br>
+		<h2><?php echo $category_title; ?> exam books</h2>
 	</div>
 </section>
 <!-- End of Book Search Section -->
@@ -38,7 +40,6 @@ else
 <!-- Start of Book Menu Section -->
 <section class="book-menu">
 	<div class="container">
-		<h3 class="text-center">Book Menu</h3>
 
 		<?php 
 		//Create SQL query to get books based on selected category
