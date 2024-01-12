@@ -15,14 +15,38 @@
 <section class="book-menu">
 	<div class="container">
 	
-		<h2 class="text-center">Book Menu</h2>
+		<h2 class="text-center">All Books</h2>
         <div class="grid-container">
 		<?php 
 		//Getting books from databse that are active and featured
+		
+		//define total number of results you want per page 
+		$results_per_page = 6;  
+		
+		//find the total number of results stored in the database
         $sql="SELECT * FROM book WHERE active='Yes'";
         
         //Execute the query
         $res=mysqli_query($conn, $sql);
+        
+        $number_of_result = mysqli_num_rows($res);  
+        
+        //determine the total number of pages available
+        $number_of_page = ceil ($number_of_result / $results_per_page); 
+        
+        //determine which page number visitor is currently on
+        if (!isset ($_GET['page']) ) {
+            $page = 1;
+        } else {
+            $page = $_GET['page'];
+        }  
+        
+        //determine the sql LIMIT starting number for the results on the displaying page
+        $page_first_result = ($page-1) * $results_per_page;
+        
+        //retrieve the selected results from database
+        $query = "SELECT * FROM book WHERE active='Yes' LIMIT " . $page_first_result . ',' . $results_per_page;
+        $res = mysqli_query($conn, $query);  
         
         //Count rows
         $count=mysqli_num_rows($res);
@@ -85,10 +109,34 @@
             //Book is not available
             echo "<div class='error'>Book is not available.</div>";
         }
-        ?>
+        //display the link of the pages in URL
+        ?> 
         
+		
+		
 		<div class="clearfix"></div>
 		</div>
+		<br> 
+		
+		<div class="text-center">
+  			<div class="pagination">
+  			
+        <?php 
+                if($page>1)
+                echo '<a href = "books.php?page=' . ($page-1) . '">&laquo;</a>';
+                for($pag = 1; $pag<= $number_of_page; $pag++) {
+                    if($page==$pag)
+                        echo '<a href = "books.php?page=' . $pag . '" class="active">' . $pag . ' </a>';
+                    else
+                        echo '<a href = "books.php?page=' . $pag . '">' . $pag . ' </a>';
+                } 
+                if($page<$number_of_page)
+                    echo '<a href = "books.php?page=' . ($page+1) . '">&raquo;</a>';
+        ?>
+            
+         	</div>
+		</div>
+		
 	</div>
 	
 </section>
