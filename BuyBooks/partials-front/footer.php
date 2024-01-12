@@ -2,14 +2,14 @@
 <!-- Start of Social Section -->
 <section class="social">
 	<div class="container text-center">
-		<ul>
-			<li>
+		<ul class="social-media">
+			<li class="social-media">
 				<a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
 			</li>
-			<li>
+			<li class="social-media">
 				<a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
 			</li>
-			<li>
+			<li class="social-media">
 				<a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
 			</li>
 		</ul>
@@ -20,7 +20,7 @@
 <!-- Start of Footer Section -->
 <section class="footer">
 	<div class="container text-center">
-		<p>All rights reserved. Designed By Sayantika Kandar</p>
+		<p>&#169; All rights reserved. Designed By Sayantika Kandar</p>
 	</div>
 </section>
 <!-- End of Footer Section -->
