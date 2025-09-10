@@ -50,9 +50,8 @@ Run the application:
 
 Follow the menu options to manage books, customers, and orders.
 
-### ⚙️ Database Configuration (Optional)
+### ⚙️ Database Configuration
 
-By default, the application runs in-memory.
 To enable database persistence:
 
 Update DatabaseConnection.java with your MySQL/H2 credentials:
