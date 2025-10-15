@@ -138,14 +138,6 @@ BuyBooks/
 - **book**: Book details, pricing, and inventory
 - **order_book**: Customer orders and delivery information
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome. Feel free to check issues page if you want to contribute.
-
 ## 👤 Author
 
 **Sayantika Kandar**
-
-## 📝 License
-
-Copyright © 2022. All Rights Reserved.
